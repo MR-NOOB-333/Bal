@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Girl Voice Prank</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      justify-items: center;
+    }
+    button {
+      width: 80px;
+      height: 50px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .orange { background-color: #ff9800; }
+    .blue { background-color: #03a9f4; }
+    .green { background-color: #4caf50; }
+    .red { background-color: #f44336; }
+    .purple { background-color: #9c27b0; }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Girl Voice Prank</h1>
+<div class="grid">
+  <button class="orange" onclick="playSound('hi')">Hi</button>
+  <button class="blue" onclick="playSound('hello')">Hello</button>
+  <button class="green" onclick="playSound('kemon')">Kemon</button>
+  <button class="red" onclick="playSound('obosta')">Obosta</button>
+
+  <button class="orange" onclick="playSound('baby')">Baby</button>
+  <button class="blue" onclick="playSound('yes')">Yes</button>
+  <button class="green" onclick="playSound('no')">No</button>
+  <button class="red" onclick="playSound('sure')">Sure</button>
+
+  <button class="orange" onclick="playSound('omg')">OMG</button>
+  <button class="blue" onclick="playSound('haha')">Haha</button>
+  <button class="green" onclick="playSound('wait')">Wait</button>
+  <button class="red" onclick="playSound('sorry')">Sorry</button>
+
+  <button class="orange" onclick="playSound('ouch')">Ouch</button>
+  <button class="blue" onclick="playSound('go')">Go</button>
+  <button class="green" onclick="playSound('come')">Come</button>
+  <button class="red" onclick="playSound('what')">What</button>
+
+  <button class="orange" onclick="playSound('why')">Why?</button>
+  <button class="blue" onclick="playSound('fine')">Fine</button>
+  <button class="green" onclick="playSound('take')">Take</button>
+  <button class="red" onclick="playSound('whoops')">Whoops</button>
+</div>
+
+<audio id="player"></audio>
+
+<script>
+  function playSound(name) {
+    const player = document.getElementById('player');
+    player.src = `sounds/${name}.mp3`;
+    player.play();
+  }
+</script>
+
+</body>
+</html>

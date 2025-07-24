@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Girl Voice Prank</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8ff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #ff4081;
+      margin-bottom: 20px;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    .voice-btn {
+      background: #ff80ab;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .voice-btn:hover {
+      background: #f06292;
+    }
+  </style>
+</head>
+<body>
+  <h1>Girl Voice Prank</h1>
+  <div class="button-grid">
+    <button class="voice-btn" onclick="playVoice(hi)">Hi</button>
+    <button class="voice-btn" onclick="playVoice(2)">Hello</button>
+    <button class="voice-btn" onclick="playVoice(3)">Kemon Acho</button>
+    <button class="voice-btn" onclick="playVoice(4)">Ki Koro</button>
+    <button class="voice-btn" onclick="playVoice(5)">Obosta</button>
+    <button class="voice-btn" onclick="playVoice(6)">Bujhlam Na</button>
+    <button class="voice-btn" onclick="playVoice(7)">Ektu Thamo</button>
+    <button class="voice-btn" onclick="playVoice(8)">Bolte Pari</button>
+    <button class="voice-btn" onclick="playVoice(9)">Oi Suno</button>
+    <button class="voice-btn" onclick="playVoice(10)">Aro Kichu</button>
+    <button class="voice-btn" onclick="playVoice(11)">Ki Re</button>
+    <button class="voice-btn" onclick="playVoice(12)">Ki Problem</button>
+    <button class="voice-btn" onclick="playVoice(13)">Ashcho Kothai</button>
+    <button class="voice-btn" onclick="playVoice(14)">Jao Bari</button>
+    <button class="voice-btn" onclick="playVoice(15)">Phone Diyo</button>
+    <button class="voice-btn" onclick="playVoice(16)">Game Khelo</button>
+    <button class="voice-btn" onclick="playVoice(17)">Boro Bhai</button>
+    <button class="voice-btn" onclick="playVoice(18)">Na Baba</button>
+    <button class="voice-btn" onclick="playVoice(19)">Tor Sathe</button>
+    <button class="voice-btn" onclick="playVoice(20)">Khub Bhalo</button>
+  </div>  <script>
+    function playVoice(id) {
+      const audio = new Audio(`assets/voice${id}.mp3`);
+      audio.play();
+    }
+  </script></body>
+</html>
